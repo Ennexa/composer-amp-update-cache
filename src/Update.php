@@ -70,6 +70,18 @@ class Update
     }
 
     /**
+    * Set Caches
+    *
+    * Set a list of AMP Caches with the same structure as what you get from https://cdn.ampproject.org
+    *
+    * @param array $cacheList List of caches in the format of https://cdn.ampproject.org
+    */
+    public function setCache($cacheList)
+    {
+        $this->cacheList = $cacheList;
+    }
+
+    /**
     * Purge
     *
     * Request AMP CDNs to purge the cache for the specified url
