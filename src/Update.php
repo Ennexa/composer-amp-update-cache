@@ -125,7 +125,7 @@ class Update
      *
      * @return string
      */
-    private function getCaches()
+    public function getCache()
     {
         if (is_null($this->cacheList)) {
             $response = $this->guzzleClient->get('https://cdn.ampproject.org/caches.json');
